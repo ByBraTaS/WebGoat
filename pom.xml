@@ -113,6 +113,8 @@
     <bootstrap.version>3.3.7</bootstrap.version>
     <cglib.version>2.2</cglib.version>
     <!-- do not update necessary for lesson -->
+    <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
+    <skipTests>true</skipTests>
     <checkstyle.version>3.1.2</checkstyle.version>
     <commons-collections.version>3.2.1</commons-collections.version>
     <commons-io.version>2.11.0</commons-io.version>
