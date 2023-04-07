@@ -61,11 +61,8 @@ jobs:
                     file: ./Dockerfile_desktop
                     push: false
                     build-args: |
-                        webgoat_version=${{ env.WEBGOAT_MAVEN_VERSION }} 
-    build:
-        name: Build and analyze
-        runs-on: ubuntu-latest
-        steps:
+                        webgoat_version=${{ env.WEBGOAT_MAVEN_VERSION }}
+
             -   uses: actions/checkout@v3
                 with:
                     fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
